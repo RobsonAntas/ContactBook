@@ -14,7 +14,7 @@ public class UpdateContact implements Logica {
 
 	@Override
 	public String executaRetorno(HttpServletRequest request, HttpServletResponse response) {
-		long id = (long)Integer.parseInt(request.getParameter("user"));
+		long id = Long.parseLong(request.getParameter("user"));
 		String email = request.getParameter("email");
 		
 		String idTel_1 = request.getParameter("idTel1");
