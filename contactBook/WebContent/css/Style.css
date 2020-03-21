@@ -1,0 +1,23 @@
+@charset "ISO-8859-1";
+
+.first{
+	text-align:center;
+	color:blue;
+	
+}
+
+.container{
+	margin:0 auto;
+	border: 1px solid;
+	color:blue;
+}
+
+#error{
+	font-size:10pt;
+	color:red;
+}
+
+.atualiza{
+	margin:0 auto;
+	
+}

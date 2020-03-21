@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/Style.css" />
+</head>
+<body>
+<div id="cadastro">
+<form action="Sistema" method="post">
+Nome:<input type="text" name="nome"/><br/>
+<br/>
+E-mail:<input type="email" name="email"/><br/>
+<br/>
+Senha:<input type="password" name="senha"/><br/>
+<br/>
+DDD(1):<input type="number" name="ddd_1"/> Telefone(1) :<input type="tel" name="tel_1"/> Tipo(1):<input type="text" name="tipo_1"/><br/>
+<br/>
+DDD(2):<input type="number" name="ddd_2"/> Telefone(2) :<input type="tel" name="tel_2"/> Tipo(2):<input type="text" name="tipo_2"/><br/>
+<br/>
+DDD(3):<input type="number" name="ddd_3"/> Telefone(3) :<input type="tel" name="tel_3"/> Tipo(3):<input type="text" name="tipo_3"/><br/>
+<br/>
+<h2>Adicionar Contato</h2>
+Lógica:<input type="checkbox" name="logica" value="CreateContact"/>Adicionar Usuário<br/>
+<br/>
+<input type="submit" value="inserir"/>
+</form>
+</div>
+
+
+<div id="removeContato">
+<form action="Sistema">
+<h2>Remover Contato</h2>
+id do Usuário:<input type="text" name="id"/><br/>
+<input type="submit" value="remover"/>
+<br/>
+Lógica:<input type="checkbox" name="logica" value="DeleteContact"/>Remover Usuário<br/>
+</form>
+</div>
+
+<div class="atualiza">
+<form action="Sistema" method="post">
+<h2>Atualizar Usuário</h2>
+<div class="atualiza">
+<label for="user">Id:</label><input type="number" name="user"/><br/>
+</div>
+<div>
+<label for="email">E-mail:</label><input type="text" name="email"/><br/>
+</div>
+ID_tel(1):<input type="number" name="idTel1"/>DDD(1):<input type="number" name="ddd1"/> Telefone(1) :<input type="tel" name="tel1"/> Tipo(1):<input type="text" name="tipo1"/><br/>
+<br/>
+ID_tel(2):<input type="number" name="idTel2"/>DDD(2):<input type="number" name="ddd2"/> Telefone(2) :<input type="tel" name="tel2"/> Tipo(2):<input type="text" name="tipo2"/><br/>
+<br/>
+ID_tel(3):<input type="number" name="idTel3"/>DDD(3):<input type="number" name="ddd3"/>Telefone(3) :<input type="tel" name="tel3"/> Tipo(3):<input type="text" name="tipo3"/><br/>
+<br/>
+Lógica:<input type="checkbox" name="logica" value="UpdateContact"/>Atualizar Usuário<br/>
+<input type="submit" value="atualizar"/>
+</form>
+</div>
+<div class="atualiza">
+<form action="Sistema" method="post">
+<h2>Mostrar Lista Usuários com Telefone</h2>
+Lógica:<input type="checkbox" name="logica" value="ListAllHavingTelephone"/><br/>
+<input type="submit" value="listar com telefone">
+</form>
+</div>
+<div>
+<form action="Sistema" method="post">
+<h2>Mostrar Lista todos Usuários</h2>
+Lógica:<input type="checkbox" name="logica" value="ListAll"/> 
+<input type="submit" value="listar todos">
+</form>
+</div>
+
+<div class="atualiza">
+<form action="Sistema" method="post">
+<h2>Buscar Contato por ddd</h2>
+<label for="dddBuscado">ddd</label><input type="text" name="dddBuscado"/>
+Lógica:<input type="checkbox" name="logica" value="SearchContactByDdd"/> 
+<input type="submit" value="listarPorId">
+</form>
+</div>
+<div class="atualiza">
+<form action="Sistema" method="post">
+<h2>Buscar Contato por Id</h2>
+<label for="id">Id</label><input type="text" name="id"/>
+Lógica:<input type="checkbox" name="logica" value="SearchContactById"/> 
+<input type="submit" value="listarPorId">
+</form>
+</div>
+<div class="atualiza">
+<form action="Sistema" method="post">
+<h2>Buscar Contato começa com letra</h2>
+<label for="letter">Letra Inicial:</label><input type="text" name="letter"/>
+Lógica:<input type="checkbox" name="logica" value="ContactNameBeginWith"/> 
+<input type="submit" value="nomeComecaComLetra">
+</form>
+</div>
+<div class="atualiza">
+<form action="Sistema" method="post">
+<h2>Buscar Contato Nome contem</h2>
+<label for="wordPiece">Nome Contato contém:</label><input type="text" name="wordPiece"/>
+Lógica:<input type="checkbox" name="logica" value="ContactNameContaining"/> 
+<input type="submit" value="NomeContem">
+</form>
+</div>
+
+<div class="atualiza">
+<form action="Sistema" method="post">
+<h2>logar</h2>
+User Name:<input type="text" name="user"/>
+Password:<input type="text" name="password"/>
+Lógica:<input type="checkbox" name="logica" value="LoginUsuario"/><br/>
+<input type="submit" value="logar">
+</form>
+</div>
+
+
+</html>
